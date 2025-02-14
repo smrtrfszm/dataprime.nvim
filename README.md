@@ -21,9 +21,9 @@ Install the plugin with your package manager:
 ```lua
 {
   'smrtrfszm/dataprime.nvim',
-  dependencies = {'nvim-treesitter'},
+  dependencies = {'nvim-treesitter/nvim-treesitter'},
   -- Optionally:
-  -- dependencies = {'nvim-treesitter', 'Comment.nvim'},
+  -- dependencies = {'nvim-treesitter/nvim-treesitter', 'numToStr/Comment.nvim'},
   config = function (_, _)
     require('dataprime').setup()
   end,

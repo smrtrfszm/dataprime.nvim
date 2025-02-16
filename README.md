@@ -1,6 +1,6 @@
 # dataprime.nvim
 
-dataprime.nvim brings coralogix's dataprime language support to Neovim
+dataprime.nvim brings Coralogix's dataprime language support to Neovim
 
 ## ✨ Features
 

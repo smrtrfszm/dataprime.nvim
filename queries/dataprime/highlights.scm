@@ -3,7 +3,7 @@
 
 (number) @number
 (string) @string
-(template_string) @string
+(format_string) @string
 (type) @type
 (variable) @variable
 (true) @boolean

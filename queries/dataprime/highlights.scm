@@ -15,13 +15,16 @@
 (call_expression
   function: (identifier) @function.call)
 
-(source_command
-  datastore: (identifier) @constant.builtin
-    (#any-of? @constant.builtin "logs" "spans"))
+(extract_function
+  type: (identifier) @function.call)
 
 (extract_function
   type: (identifier) @function.builtin
     (#any-of? @function.builtin "regexp" "kv"))
+
+(source_command
+  datastore: (identifier) @constant.builtin
+    (#any-of? @constant.builtin "logs" "spans"))
 
 (extract_argument
   argument: (identifier) @variable.parameter)

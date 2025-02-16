@@ -10,6 +10,10 @@
 ((expr (keypath (ident)) @constant.builtin)
   (#eq? @constant.builtin "null"))
 
+(source_command
+  datastore: (ident) @constant.builtin
+    (#any-of? @constant.builtin "logs" "spans"))
+
 [
  "+"
  "-"
@@ -87,7 +91,6 @@
  "last"
  "left"
  "limit"
- "logs"
  "lucene"
  "m"
  "matching"
@@ -107,7 +110,6 @@
  "sort"
  "sortby"
  "source"
- "spans"
  "stitch"
  "text"
  "timeshifted"

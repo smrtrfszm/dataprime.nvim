@@ -13,9 +13,15 @@
   datastore: (ident) @constant.builtin
     (#any-of? @constant.builtin "logs" "spans"))
 
+(regex_pattern) @string.regexp
+
+(regex
+  "/" @punctuation.bracket)
+
 [
  "+"
  "-"
+ "*"
  ">"
  ">="
  "<"
@@ -26,6 +32,9 @@
  "~~"
  "->"
 ] @operator
+
+(binary_expression
+  "/" @operator)
 
 [
   "("

@@ -12,6 +12,9 @@
 (false) @boolean
 (null) @constant.builtin
 
+(call_expression
+  function: (ident) @function.call)
+
 (source_command
   datastore: (ident) @constant.builtin
     (#any-of? @constant.builtin "logs" "spans"))

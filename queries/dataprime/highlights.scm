@@ -23,6 +23,9 @@
   type: (identifier) @function.builtin
     (#any-of? @function.builtin "regexp" "kv"))
 
+(extract_argument
+  argument: (identifier) @variable.parameter)
+
 (regex_pattern) @string.regexp
 
 (regex
@@ -64,6 +67,7 @@
   "."
   "|"
   ":"
+  "="
 ] @punctuation.delimiter
 
 [

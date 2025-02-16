@@ -5,10 +5,9 @@
 (string) @string
 (type) @type
 (variable) @variable
-
-; TODO: this should be it's own AST node
-((expr (keypath (ident)) @constant.builtin)
-  (#eq? @constant.builtin "null"))
+(true) @boolean
+(false) @boolean
+(null) @constant.builtin
 
 (source_command
   datastore: (ident) @constant.builtin

@@ -6,6 +6,8 @@
 (format_string) @string
 (type) @type
 (variable) @variable
+(key) @variable
+(property) @variable.member
 (true) @boolean
 (false) @boolean
 (null) @constant.builtin

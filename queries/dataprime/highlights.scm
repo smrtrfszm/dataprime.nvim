@@ -13,10 +13,10 @@
 (null) @constant.builtin
 
 (call_expression
-  function: (ident) @function.call)
+  function: (identifier) @function.call)
 
 (source_command
-  datastore: (ident) @constant.builtin
+  datastore: (identifier) @constant.builtin
     (#any-of? @constant.builtin "logs" "spans"))
 
 (regex_pattern) @string.regexp

@@ -107,6 +107,7 @@
  "datatypes"
  "dedupeby"
  "desc"
+ "discard"
  "distinct"
  "e"
  "enrich"

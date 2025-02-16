@@ -3,6 +3,7 @@
 
 (number) @number
 (string) @string
+(template_string) @string
 (type) @type
 (variable) @variable
 (true) @boolean
@@ -42,6 +43,12 @@
   "{"
   "}"
 ] @punctuation.bracket
+
+(template_substitution
+  [
+    "{"
+    "}"
+  ] @punctuation.special) @none
 
 [
   ","

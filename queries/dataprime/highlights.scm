@@ -19,8 +19,8 @@
   datastore: (identifier) @constant.builtin
     (#any-of? @constant.builtin "logs" "spans"))
 
-(extract_argument
-  argument: (identifier) @function.builtin
+(extract_function
+  type: (identifier) @function.builtin
     (#any-of? @function.builtin "regexp" "kv"))
 
 (regex_pattern) @string.regexp

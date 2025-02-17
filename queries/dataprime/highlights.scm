@@ -35,6 +35,8 @@
   "/" @punctuation.bracket)
 
 [
+ "&&"
+ "||"
  "+"
  "-"
  "*"

@@ -20,7 +20,7 @@
 
 (extract_function
   function: (identifier) @function.builtin
-    (#any-of? @function.builtin "regexp" "kv"))
+    (#any-of? @function.builtin "regexp" "kv" "jsonobject" "split"))
 
 (source_command
   datastore: (identifier) @constant.builtin

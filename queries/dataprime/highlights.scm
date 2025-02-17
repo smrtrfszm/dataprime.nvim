@@ -153,6 +153,7 @@
  "remove"
  "replace"
  "right"
+ "roundtime"
  "select"
  "skip"
  "sort"

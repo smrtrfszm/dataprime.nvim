@@ -2,8 +2,8 @@ local M = {}
 
 function M.setup()
   vim.filetype.add({
-    pattern = {
-      ['.*.dataprime'] = 'dataprime',
+    extension = {
+      dataprime = 'dataprime',
     },
   })
 

@@ -7,12 +7,13 @@
 (string_interpolation) @string
 (escape_sequence) @string.escape
 (type) @type
-(variable) @variable
-(key) @variable
 (field) @variable.member
 (true) @boolean
 (false) @boolean
 (null) @constant.builtin
+
+(key
+  (identifier) @variable)
 
 (call_expression
   function: (identifier) @function.call)
@@ -82,7 +83,7 @@
   "@"
 ] @punctuation.special
 
-(variable
+(key
   "$" @punctuation.special)
 
 [

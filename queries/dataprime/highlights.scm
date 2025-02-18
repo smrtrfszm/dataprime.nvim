@@ -2,6 +2,7 @@
 (block_comment) @comment
 
 (number) @number
+(interval) @number
 (string) @string
 (string_interpolation) @string
 (escape_sequence) @string.escape

@@ -73,6 +73,8 @@
     "}"
   ] @punctuation.special)
 
+(string_interpolation "`" @string)
+
 [
   ","
   "."

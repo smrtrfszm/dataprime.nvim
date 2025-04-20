@@ -4,7 +4,7 @@
 (number) @number
 (interval) @number
 (string) @string
-(string_interpolation) @string
+(string_fragment) @string
 (escape_sequence) @string.escape
 (type) @type
 (field) @variable.member

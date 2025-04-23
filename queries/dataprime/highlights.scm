@@ -136,6 +136,8 @@
  "from"
  "full"
  "groupby"
+ "in"
+ "inner"
  "interval"
  "into"
  "join"

@@ -12,8 +12,11 @@
 (false) @boolean
 (null) @constant.builtin
 
-(key
-  (identifier) @variable)
+
+(key (identifier) @variable)
+
+(key (identifier) @variable.builtin
+  (#any-of? @variable.builtin "$m" "$l" "$d"))
 
 (call_expression
   function: (identifier) @function.call)
@@ -86,9 +89,6 @@
 [
   "@"
 ] @punctuation.special
-
-(key
-  "$" @punctuation.special)
 
 [
  "a"

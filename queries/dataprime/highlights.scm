@@ -16,7 +16,7 @@
 (key (identifier) @variable)
 
 (key (identifier) @variable.builtin
-  (#any-of? @variable.builtin "$m" "$l" "$d"))
+  (#any-of? @variable.builtin "$m" "$l" "$d" "$p"))
 
 (call_expression
   function: (identifier) @function.call)

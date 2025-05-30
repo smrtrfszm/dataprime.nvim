@@ -10,13 +10,6 @@ function M.setup()
 
   vim.treesitter.language.register('dataprime', 'dataprime')
 
-  vim.api.nvim_create_autocmd('FileType', {
-    pattern = 'dataprime',
-    callback = function ()
-      vim.bo.commentstring = '//%s'
-    end,
-  })
-
   local ok, ft = pcall(require, 'Comment.ft')
   if ok then
     ft.set('dataprime', {'//%s', '/*%s*/'})

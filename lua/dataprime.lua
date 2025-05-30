@@ -1,12 +1,6 @@
 local M = {}
 
 function M.setup()
-  vim.filetype.add({
-    extension = {
-      dataprime = 'dataprime',
-    },
-  })
-
   require('nvim-treesitter.parsers').dataprime = {
     install_info = {
       url = 'https://github.com/smrtrfszm/tree-sitter-dataprime',

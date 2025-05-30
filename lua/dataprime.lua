@@ -7,14 +7,11 @@ function M.setup()
     },
   })
 
-  local parser_config = require('nvim-treesitter.parsers').get_parser_configs()
-
-  parser_config.dataprime = {
+  require('nvim-treesitter.parsers').dataprime = {
     install_info = {
       url = 'https://github.com/smrtrfszm/tree-sitter-dataprime',
       files = {'src/parser.c'},
     },
-    filetype = 'dataprime',
   }
 
   vim.treesitter.language.register('dataprime', 'dataprime')

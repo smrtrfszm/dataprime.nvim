@@ -30,7 +30,10 @@
 
 (call_expression
   function: (field_expression
-    field: (field) @function.call))
+    field: (field) @function.method.call))
+
+(call_expression
+  function: (key) @function.call)
 
 (extract_function
   function: (identifier) @function.call)

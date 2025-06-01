@@ -55,6 +55,11 @@
   "/" @punctuation.bracket)
 
 [
+  "left=>"
+  "right=>"
+] @punctuation.special
+
+[
   "&&"
   "||"
   "+"
